@@ -1,0 +1,82 @@
+#智能门锁参数配置
+apartment :
+##  测试参数
+#  appKey: 6782ebbf-6338-41a9-afc9-84c9b370f2be
+#  appSecret: imGkL7SAho831PLbsdf3cEzSiGyPbLM1qhryfzsx1OeeH+BdIcohfewtcxG569Ed
+#  url: http://t.server.hxjiot.com
+#  正式参数
+  appKey: 4fe327a5-1bce-450c-8b07-2230e80b905c
+  appSecret: eD4huOH9CUlj/1Ezvdb5tS7wQlQHeeCJfE33JWQr5JzW80msEFyOHsYiwIm4zIi5
+  url: http://server.hxjiot.com
+  #  获取token的业务能力
+  methodlogin: platformLogin
+  #添加蓝牙锁业务能力
+  addBluetooth : hxjAddBluetoothDoorLock
+  #  绑定网关业务能力
+  gatewayBind: hxjGatewayBind
+  #  门锁绑定网关
+  bindingGateway: hxjLockBindingGateway
+  #网关详情
+  getGatewayInfo: hxjGetGatewayInfo
+  #  删除网关
+  DelGateway: hxjDelGateway
+  #  远程开锁业务能力
+  theRemoteUnlock: hxjOpenDoorLock
+  #添加卡片钥匙业务能力
+  addCard : hxjAddCardKey
+  #  添加密码钥匙业务能力
+  addPassword : hxjAddPasswordKey
+  #  修改用户钥匙有效期业务能力
+  updateValidityDate : hxjModifyKeyExpiryDate
+  #  删除钥匙业务能力
+  deleteKey : hxjDelKey
+  #设置门禁系统参数业务能力
+  setParam : hxjSetParam
+  #读取门禁系统参数与状态业务能力
+  synLockInfo : hxjSynLockInfo
+  #  同步门锁日志记录业务能力
+  SynLockRecord : hxjSynLockRecord
+  #  同步门锁钥匙业务能力
+  SynLockKey: hxjSynLockKey
+  #  触发门锁进入添加指纹模式业务能力
+  touchAddFingerPrintKey: hxjTouchAddFingerPrintKey
+  #  下发(网关)指纹业务能力
+  gatewayAddLockFingerPrint: hxjGatewayAddLockFingerPrint
+  # 网关获取到指纹推送业务能力
+  gatewayGetFingerPrintPush: hxjGatewayGetFingerPrintPush
+  #  网关下发指纹进度推送通知业务能力
+  gatewaySendFingerPrintProgressPush : hxjGatewaySendFingerPrintProgressPush
+  #  网关下发指纹结果推送通知业务能力
+  gatewaySendKeyResultPush : hxjGatewaySendKeyResultPush
+  #解除蓝牙门锁绑定网关
+  deleteGateway : hxjLockUnBindingGateway
+  #读取门锁系统参数和状态
+  BluetoothdDetails : hxjSynLockInfo
+  #设置门锁系统参数
+  configuration : hxjSetParam
+  #读取门锁系统参数
+  information : hxjSynLockInfo
+  #添加密码
+  PasswordKey : hxjAddPasswordKey
+  #删除钥匙
+  DelKey : hxjDelKey
+  #同步钥匙
+  synLock : hxjSynLockKey
+baiwei :
+  url : http://client.api.melifego.cn:80
+  #百为微信登录获取参数url
+  WXurl : https://auth.api.melifego.cn:8443
+  #老版门锁url
+  BWLockURL : http://acccp.melifego.com
+  #开门
+  open :  /Open.ashx
+  #查询开门状态
+  status :  /EquipmentStatus.ashx
+  #查询控制器
+  query :  /EquipmentQuery.ashx
+  #查询控制器
+  webLoginURL :  http://client.api.melifego.cn:80/Security/Authentication/Signin
+#智能门禁小程序的微信参数
+lock :
+  appid : wxeeee516c3ae0629b
+  appsecret : 4976f9e3129dd0ee2567e909aca65fed

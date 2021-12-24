@@ -1,0 +1,10 @@
+spring:
+  profiles:
+    # 开发环境
+    active: pro,pro-custom
+    #测试环境
+    #    active: test
+    #热部署
+    devtools:
+      restart:
+        enabled: true
